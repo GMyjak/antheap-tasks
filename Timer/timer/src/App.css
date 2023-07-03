@@ -1,0 +1,107 @@
+body {
+  background:#154170;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+  background: transparent;
+  width: 90%;
+  min-width: 600px;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.control-panel {
+  background: #FFFFFF;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.task-list {
+  background: #FFFFFF;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.input-field {
+  border: 3px solid;
+  border-color: #1756A6;
+  border-radius: 5px;
+  color: #000000;
+  padding: 15px;
+  max-width: 740px;
+  width: 90%;
+  font-size: 20px;
+  margin: 10px;
+  margin-left: 0px;
+}
+
+.list-item {
+  border-radius: 3px;
+  background-color: #72B0EE;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  padding: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr;
+}
+
+.list-item-element {
+  display: flex;
+  align-items: center;
+  min-width: 0px;
+  height: 54px;
+  margin-left: 3px;
+  margin-right: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.button {
+  border: 3px solid;
+  border-radius: 5px;
+  width: 150px;
+  font-size: 20px;
+  padding: 15px;
+  color: #FFFFFF;
+  cursor: pointer;
+  margin: 10px;
+  margin-left: 0px;
+}
+
+.button-blue {
+  border-color: #1756A6;
+  background-color: #1756A6;
+}
+
+.button-blue:hover {
+  background-color: #1E72DF;
+}
+
+.button-blue:active {
+  background-color: #1A63C2;
+}
+
+.button-red {
+  border-color: #C65043;
+  background-color: #C65043;
+  margin: 0px;
+  width: 100%;
+  padding: 10px;
+}
+
+.button-red:hover {
+  background-color: #D17469;
+}
+
+.button-red:active {
+  background-color: #CB6256;
+}
