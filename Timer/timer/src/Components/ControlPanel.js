@@ -1,16 +1,22 @@
 import React from 'react';
+import { useRef } from 'react';
 
-function ControlPanel() {
+function ControlPanel(props) {
+    const inputRef = useRef(null);
+
     return (
-      <div>
-        <h1>Start new task</h1>
         <div>
-            <input className="input-field" text="Enter task name" maxLength={80}/>
-            <button className="button button-blue">Start</button>
+            <h1>Start new task</h1>
+            <div>
+                <input className="input-field" maxLength={80} ref={inputRef} />
+                <button className="button button-blue" onClick={() => {
+                    props.addTask(inputRef.current.value);
+                }
+                }>Start</button>
+            </div>
+
         </div>
-        
-      </div>
     );
-  }
-  
-  export default ControlPanel;
+}
+
+export default ControlPanel;
