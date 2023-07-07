@@ -67,7 +67,7 @@ namespace NIP_backend.Controllers
         private async Task<ActionResult<EntityDto>> GetEntityFromApi(string nip)
         {
             var queryBuilder = new QueryBuilder();
-            var date = DateTime.Now;
+            var date = DateTime.Now.AddDays(-2);
             queryBuilder.Add("date", date.ToString(taxApiConfig.DateFormat));
 
             var finalEndpoint = string.Format(taxApiConfig.NipEndpoint, nip) + queryBuilder.ToString();

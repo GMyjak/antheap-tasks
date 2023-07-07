@@ -1,0 +1,1 @@
+Before you start the projects, call `Update-Database` in Nuget console in Visual Studio. You can switch between dev/prod api/DB by switching between launch profiles in VS.

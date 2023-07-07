@@ -19,6 +19,11 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
+    "NIP_backend_prod": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:7002;http://localhost:5266"
+    },
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
